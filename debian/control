@@ -1,0 +1,28 @@
+Source: node-lru-cache
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Jérémy Lal <kapouer@melix.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends: debhelper-compat (= 13)
+ , nodejs
+ , node-yallist <!nocheck>
+ , node-tap <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/isaacs/node-lru-cache
+Vcs-Git: https://salsa.debian.org/js-team/node-lru-cache.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-lru-cache
+Rules-Requires-Root: no
+
+Package: node-lru-cache
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-yallist
+ , nodejs
+Description: least-recently-used cache object for Node.js
+ A cache object that deletes the least-recently-used items.
+ This is the Node.js module.
+ .
+ Node.js is an event-based server-side javascript engine.
