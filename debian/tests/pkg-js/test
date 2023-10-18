@@ -1,1 +1,7 @@
-tap -R spec test/*.js
+if test "$AUTOPKGTEST_TMP" != ""; then
+	rm -f test/ttl.ts \
+		test/purge-stale-exhaustive.ts \
+		test/basic.ts \
+		test/map-like.ts
+fi
+tap -R tap --no-cov `ls test/*.js test/*.ts|grep -v test/avoid-memory-leak.ts`

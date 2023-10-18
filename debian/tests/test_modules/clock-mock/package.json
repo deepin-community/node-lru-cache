@@ -1,0 +1,32 @@
+{
+  "name": "clock-mock",
+  "version": "1.0.6",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "description": "a mock clock for tests involving timing",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacs/clock-mock.git"
+  },
+  "author": "Isaac Z. Schlueter <i@izs.me> (https://izs.me)",
+  "license": "ISC",
+  "scripts": {
+    "test": "tap",
+    "snap": "tap",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "prepublishOnly": "git push origin --follow-tags"
+  },
+  "devDependencies": {
+    "tap": "^16.0.0"
+  },
+  "engines": {
+    "node": ">= 12"
+  }
+}

@@ -1,3 +1,4 @@
 version=4
 opts=filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-lru-cache-$1/ \
-https://github.com/isaacs/node-lru-cache/tags .*/archive/.*/v?([\d\.]+).tar.gz	
+https://github.com/isaacs/node-lru-cache/tags .*/archive/.*/v?([\d\.]+).tar.gz
+
