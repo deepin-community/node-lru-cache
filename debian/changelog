@@ -1,3 +1,120 @@
+node-lru-cache (7.14.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 7.14.1
+
+ -- Yadd <yadd@debian.org>  Fri, 18 Nov 2022 11:06:06 +0100
+
+node-lru-cache (7.14.0-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 7.14.0
+
+ -- Yadd <yadd@debian.org>  Wed, 17 Aug 2022 07:10:56 +0200
+
+node-lru-cache (7.13.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Fix autopkgtest
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Aug 2022 21:53:17 +0200
+
+node-lru-cache (7.13.2-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 7.13.2
+  * Update test module
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Aug 2022 21:11:25 +0200
+
+node-lru-cache (7.13.1-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream version 7.13.1
+
+ -- Yadd <yadd@debian.org>  Sat, 16 Jul 2022 14:15:02 +0200
+
+node-lru-cache (7.12.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove unused license definitions for Expat.
+  * New upstream version 7.12.0
+  * Update copyright
+
+ -- Yadd <yadd@debian.org>  Thu, 30 Jun 2022 09:31:42 +0200
+
+node-lru-cache (7.10.2-1) unstable; urgency=medium
+
+  * Team upload
+  * Drop @types/lru-cache component
+  * New upstream version 7.10.2
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Jun 2022 11:08:56 +0200
+
+node-lru-cache (7.10.1+~7.6.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * New upstream version 7.10.1+~7.6.1
+  * Add test dependency to ts-node
+  * Update test
+
+ -- Yadd <yadd@debian.org>  Thu, 12 May 2022 16:05:44 +0200
+
+node-lru-cache (7.7.3+~7.6.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Wed, 06 Apr 2022 07:38:43 +0200
+
+node-lru-cache (7.7.3+~7.6.1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 7.7.3+~7.6.1
+  * Embed clock-mock for test only
+
+ -- Yadd <yadd@debian.org>  Tue, 05 Apr 2022 08:41:28 +0200
+
+node-lru-cache (7.4.4+~7.4.0-3) experimental; urgency=medium
+
+  * Team upload
+  * Indicate that version 7 breaks node-cacache < 16~
+
+ -- Yadd <yadd@debian.org>  Tue, 05 Apr 2022 08:25:37 +0200
+
+node-lru-cache (7.4.4+~7.4.0-2) experimental; urgency=medium
+
+  * Team upload
+  * Fix autopkgtest
+
+ -- Yadd <yadd@debian.org>  Tue, 05 Apr 2022 06:05:06 +0200
+
+node-lru-cache (7.4.4+~7.4.0-1) experimental; urgency=medium
+
+  * Team upload
+  * Drop patch and require node-tap >= 15
+  * New upstream version 7.4.4+~7.4.0
+
+ -- Yadd <yadd@debian.org>  Fri, 11 Mar 2022 15:12:28 +0100
+
+node-lru-cache (7.4.0+~7.4.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 7.4.0+~7.4.0
+  * Refresh patches
+
+ -- Yadd <yadd@debian.org>  Thu, 03 Mar 2022 21:11:53 +0100
+
+node-lru-cache (6.0.0+~5.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Drop dependency to nodejs
+  * Embed typescript definitions
+  * New upstream version 6.0.0+~5.1.1
+
+ -- Yadd <yadd@debian.org>  Tue, 23 Nov 2021 15:38:54 +0100
+
 node-lru-cache (5.1.1-8) unstable; urgency=medium
 
   * Team upload
