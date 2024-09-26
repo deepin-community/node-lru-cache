@@ -1,0 +1,48 @@
+From: =?utf-8?q?Bastien_Roucari=C3=A8s?= <rouca@debian.org>
+Date: Sun, 28 Jul 2024 14:21:33 +0000
+Subject: cjs export the named LRUCache member
+
+bug: https://github.com/isaacs/node-lru-cache/issues/289
+origin: backport, https://github.com/isaacs/node-lru-cache/commit/798fef3902e4a1a9d7ba106b285394bd93476022
+---
+ package.json      | 2 +-
+ src/index-cjs.ts  | 3 +++
+ tsconfig-esm.json | 3 +++
+ 3 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 src/index-cjs.ts
+
+diff --git a/package.json b/package.json
+index bae4a04..1c02e13 100644
+--- a/package.json
++++ b/package.json
+@@ -49,7 +49,7 @@
+       },
+       "require": {
+         "types": "./dist/cjs/index.d.ts",
+-        "default": "./dist/cjs/index.js"
++        "default": "./dist/cjs/index-cjs.js"
+       }
+     }
+   },
+diff --git a/src/index-cjs.ts b/src/index-cjs.ts
+new file mode 100644
+index 0000000..c62020e
+--- /dev/null
++++ b/src/index-cjs.ts
+@@ -0,0 +1,3 @@
++import LRUCache from './index.js'
++
++export = Object.assign(LRUCache, { default: LRUCache, LRUCache })
+diff --git a/tsconfig-esm.json b/tsconfig-esm.json
+index 9a57157..17982d9 100644
+--- a/tsconfig-esm.json
++++ b/tsconfig-esm.json
+@@ -1,5 +1,8 @@
+ {
+   "extends": "./tsconfig-base.json",
++  "exclude": [
++    "src/index-cjs.ts"
++  ],
+   "compilerOptions": {
+     "module": "esnext",
+     "outDir": "dist/mjs"

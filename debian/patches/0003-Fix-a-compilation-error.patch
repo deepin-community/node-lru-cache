@@ -1,0 +1,18 @@
+From: =?utf-8?q?Bastien_Roucari=C3=A8s?= <rouca@debian.org>
+Date: Thu, 1 Aug 2024 08:24:58 +0000
+Subject: Fix a compilation error
+
+Forwarded: not-needed
+---
+ src/index-cjs.ts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/index-cjs.ts b/src/index-cjs.ts
+index c62020e..5f6eac1 100644
+--- a/src/index-cjs.ts
++++ b/src/index-cjs.ts
+@@ -1,3 +1,3 @@
+-import LRUCache from './index.js'
++import { LRUCache } from './index.js'
+ 
+ export = Object.assign(LRUCache, { default: LRUCache, LRUCache })

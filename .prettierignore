@@ -1,7 +1,10 @@
-node_modules
-tap-snapshots
-coverage
-.nyc_output
-bench-lru
-.github
-scripts
+/node_modules
+/tap-snapshots
+/coverage
+/.nyc_output
+/benchmark
+/.github
+/scripts
+/CHANGELOG.md
+/docs
+/dist

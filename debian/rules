@@ -8,3 +8,6 @@
 	dh $@
 
 override_dh_auto_build:
+	tsc -p tsconfig.json
+	tsc -p tsconfig-esm.json
+	sh fixup.sh
