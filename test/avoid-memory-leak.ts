@@ -1,4 +1,4 @@
-#!/usr/bin/env node --expose-gc
+#!/usr/bin/env node --no-warnings --loader=ts-node/esm --expose-gc
 
 // https://github.com/isaacs/node-lru-cache/issues/227
 
@@ -26,7 +26,7 @@ const tryReq = (mod: string) => {
 
 const v8 = tryReq('v8')
 
-import LRUCache from '../'
+import { LRUCache } from '../'
 const expectItemCount = Math.ceil(maxSize / itemSize)
 const max = expectItemCount + 1
 const keyRange = expectItemCount * 2
@@ -55,7 +55,7 @@ const runTest = async (t: Tap.Test, cache: LRUCache<any, any>) => {
   }
 
   // now start the setting and profiling
-  const profiles = []
+  const profiles: ReturnType<typeof prof>[] = []
   for (let i = 0; i < n; i++) {
     if (i % profEvery === 0) {
       const profile = prof(i, cache)
@@ -69,15 +69,15 @@ const runTest = async (t: Tap.Test, cache: LRUCache<any, any>) => {
         'expect free stack to have <= 1 item',
         { found: profile.freeLength }
       )
-      t.equal(
-        profile.number_of_native_contexts,
-        1,
-        '1 native context'
+      t.ok(
+        profile.number_of_native_contexts <= 2,
+        'expect only 1 or 2 native contexts',
+        { found: profile.number_of_native_contexts }
       )
       t.equal(
         profile.number_of_detached_contexts,
         0,
-        '0 native context'
+        '0 detached contexts'
       )
       profiles.push(profile)
     }

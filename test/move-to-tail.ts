@@ -1,5 +1,5 @@
 import t from 'tap'
-import LRU from '../'
+import { LRUCache as LRU } from '../'
 import { expose } from './fixtures/expose'
 
 const c = new LRU({ max: 5 })
@@ -20,7 +20,7 @@ t.test('list integrity', { bail: true }, t => {
     tail: exp.tail,
   })
   const snap = () => {
-    const a = []
+    const a: ReturnType<typeof e>[] = []
     for (let i = 0; i < 5; i++) {
       a.push(e(i))
     }

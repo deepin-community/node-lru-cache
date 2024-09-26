@@ -5,7 +5,7 @@
  * Make sure to inspect the output below.  Do not ignore changes!
  */
 'use strict'
-exports[`test/map-like.ts TAP > dump 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > dump 1`] = `
 Array [
   Array [
     3,
@@ -45,7 +45,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > dump, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > dump, 7 stale 1`] = `
 Array [
   Array [
     3,
@@ -95,7 +95,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > dump, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > dump, new value 4 1`] = `
 Array [
   Array [
     3,
@@ -135,35 +135,83 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > empty, dump 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > dump, resolved fetch 99 too late 1`] = `
+Array [
+  Array [
+    3,
+    Object {
+      "size": 1,
+      "value": "3",
+    },
+  ],
+  Array [
+    5,
+    Object {
+      "size": 1,
+      "value": "5",
+    },
+  ],
+  Array [
+    6,
+    Object {
+      "size": 1,
+      "value": "6",
+    },
+  ],
+  Array [
+    7,
+    Object {
+      "size": 1,
+      "value": "7",
+    },
+  ],
+  Array [
+    4,
+    Object {
+      "size": 1,
+      "value": "new value 4",
+    },
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > empty, dump 1`] = `
 Array []
 `
 
-exports[`test/map-like.ts TAP > empty, entries 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, entries 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > empty, keys 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, foreach 1`] = `
+Array []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > empty, keys 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > empty, rentries 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, rentries 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > empty, rkeys 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, rforeach 1`] = `
+Array []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > empty, rkeys 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > empty, rvalues 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, rvalues 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > empty, values 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > empty, values 1`] = `
 Generator []
 `
 
-exports[`test/map-like.ts TAP > entries 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > entries 1`] = `
 Generator [
   Array [
     7,
@@ -188,7 +236,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > entries, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > entries, 7 stale 1`] = `
 Generator [
   Array [
     4,
@@ -209,7 +257,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > entries, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > entries, new value 4 1`] = `
 Generator [
   Array [
     4,
@@ -234,7 +282,185 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > forEach, no thisp 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > entries, resolved fetch 99 too late 1`] = `
+Generator [
+  Array [
+    4,
+    "new value 4",
+  ],
+  Array [
+    7,
+    "7",
+  ],
+  Array [
+    6,
+    "6",
+  ],
+  Array [
+    5,
+    "5",
+  ],
+  Array [
+    3,
+    "3",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, dump 1`] = `
+Array [
+  Array [
+    0,
+    Object {
+      "size": 1,
+      "value": "0",
+    },
+  ],
+  Array [
+    1,
+    Object {
+      "size": 1,
+      "value": "1",
+    },
+  ],
+  Array [
+    2,
+    Object {
+      "size": 1,
+      "value": "2",
+    },
+  ],
+  Array [
+    123,
+    Object {
+      "size": 1,
+      "value": "123",
+    },
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, entries 1`] = `
+Generator [
+  Array [
+    123,
+    "123",
+  ],
+  Array [
+    2,
+    "2",
+  ],
+  Array [
+    1,
+    "1",
+  ],
+  Array [
+    0,
+    "0",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, foreach 1`] = `
+Array [
+  Array [
+    123,
+    "123",
+  ],
+  Array [
+    2,
+    "2",
+  ],
+  Array [
+    1,
+    "1",
+  ],
+  Array [
+    0,
+    "0",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, keys 1`] = `
+Generator [
+  123,
+  2,
+  1,
+  0,
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, rentries 1`] = `
+Generator [
+  Array [
+    0,
+    "0",
+  ],
+  Array [
+    1,
+    "1",
+  ],
+  Array [
+    2,
+    "2",
+  ],
+  Array [
+    123,
+    "123",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, rforeach 1`] = `
+Array [
+  Array [
+    0,
+    "0",
+  ],
+  Array [
+    1,
+    "1",
+  ],
+  Array [
+    2,
+    "2",
+  ],
+  Array [
+    123,
+    "123",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, rkeys 1`] = `
+Generator [
+  0,
+  1,
+  2,
+  123,
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, rvalues 1`] = `
+Generator [
+  "0",
+  "1",
+  "2",
+  "123",
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > fetch 123 resolved, values 1`] = `
+Generator [
+  "123",
+  "2",
+  "1",
+  "0",
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > forEach, no thisp 1`] = `
 Array [
   Array [
     "new value 4",
@@ -255,7 +481,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > forEach, with thisp 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > forEach, with thisp 1`] = `
 Array [
   Array [
     "new value 4",
@@ -288,7 +514,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > forEach, with thisp 2`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > forEach, with thisp 2`] = `
 Array [
   Array [
     "3",
@@ -321,7 +547,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > keys 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > keys 1`] = `
 Generator [
   7,
   6,
@@ -331,7 +557,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > keys, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > keys, 7 stale 1`] = `
 Generator [
   4,
   6,
@@ -340,7 +566,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > keys, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > keys, new value 4 1`] = `
 Generator [
   4,
   7,
@@ -350,7 +576,53 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rentries 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > keys, resolved fetch 99 too late 1`] = `
+Generator [
+  4,
+  7,
+  6,
+  5,
+  3,
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, dump 1`] = `
+Array []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, entries 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, foreach 1`] = `
+Array []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, keys 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, rentries 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, rforeach 1`] = `
+Array []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, rkeys 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, rvalues 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > pending fetch, values 1`] = `
+Generator []
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > rentries 1`] = `
 Generator [
   Array [
     3,
@@ -375,7 +647,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rentries, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rentries, 7 stale 1`] = `
 Generator [
   Array [
     3,
@@ -396,7 +668,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rentries, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rentries, new value 4 1`] = `
 Generator [
   Array [
     3,
@@ -421,7 +693,32 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rforEach, no thisp 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rentries, resolved fetch 99 too late 1`] = `
+Generator [
+  Array [
+    3,
+    "3",
+  ],
+  Array [
+    5,
+    "5",
+  ],
+  Array [
+    6,
+    "6",
+  ],
+  Array [
+    7,
+    "7",
+  ],
+  Array [
+    4,
+    "new value 4",
+  ],
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > rforEach, no thisp 1`] = `
 Array [
   Array [
     "3",
@@ -442,7 +739,7 @@ Array [
 ]
 `
 
-exports[`test/map-like.ts TAP > rkeys 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rkeys 1`] = `
 Generator [
   3,
   4,
@@ -452,7 +749,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rkeys, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rkeys, 7 stale 1`] = `
 Generator [
   3,
   5,
@@ -461,7 +758,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rkeys, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rkeys, new value 4 1`] = `
 Generator [
   3,
   5,
@@ -471,7 +768,17 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rvalues 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rkeys, resolved fetch 99 too late 1`] = `
+Generator [
+  3,
+  5,
+  6,
+  7,
+  4,
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > rvalues 1`] = `
 Generator [
   "3",
   "4",
@@ -481,7 +788,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rvalues, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rvalues, 7 stale 1`] = `
 Generator [
   "3",
   "5",
@@ -490,7 +797,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > rvalues, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rvalues, new value 4 1`] = `
 Generator [
   "3",
   "5",
@@ -500,7 +807,17 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > values 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > rvalues, resolved fetch 99 too late 1`] = `
+Generator [
+  "3",
+  "5",
+  "6",
+  "7",
+  "new value 4",
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > values 1`] = `
 Generator [
   "7",
   "6",
@@ -510,7 +827,7 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > values, 7 stale 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > values, 7 stale 1`] = `
 Generator [
   "new value 4",
   "6",
@@ -519,7 +836,17 @@ Generator [
 ]
 `
 
-exports[`test/map-like.ts TAP > values, new value 4 1`] = `
+exports[`test/map-like.ts TAP bunch of iteration things > values, new value 4 1`] = `
+Generator [
+  "new value 4",
+  "7",
+  "6",
+  "5",
+  "3",
+]
+`
+
+exports[`test/map-like.ts TAP bunch of iteration things > values, resolved fetch 99 too late 1`] = `
 Generator [
   "new value 4",
   "7",

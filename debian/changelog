@@ -1,3 +1,33 @@
+node-lru-cache (10.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Do not export default
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 01 Aug 2024 08:11:33 +0000
+
+node-lru-cache (10.0.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Compat fixes for debian archive
+    + Export default for fixing build failure
+    + Readd reset() method fixing ejs
+  * Backport fixes from upstream:
+    + values() now return a Map avoiding undefined error in tsc
+    + Better export of cjs module
+
+ -- Bastien Roucariès <rouca@debian.org>  Sun, 28 Jul 2024 14:30:32 +0000
+
+node-lru-cache (10.0.1-1) experimental; urgency=medium
+
+  * Team upload
+  * Update standards version to 4.6.2, no changes needed.
+  * New upstream version 10.0.1
+  * Drop dependency to node-yallist
+  * Add build dependencies to node-esbuild and node-typescript
+  * Build with typescript
+
+ -- Yadd <yadd@debian.org>  Sun, 28 Jul 2024 12:26:53 +0400
+
 node-lru-cache (7.14.1-1) unstable; urgency=medium
 
   * Team upload

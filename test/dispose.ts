@@ -1,5 +1,5 @@
 import t from 'tap'
-import LRU from '../'
+import { LRUCache as LRU } from '../'
 
 t.test('disposal', t => {
   const disposed: any[] = []
@@ -90,7 +90,6 @@ t.test('disposal', t => {
   }
   t.strictSame(disposed, [[2, 2, 'set']])
 
-  // @ts-expect-error
   c.noDisposeOnSet = true
   c.clear()
   disposed.length = 0
